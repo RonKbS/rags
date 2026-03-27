@@ -3,8 +3,6 @@
 *__pycache__*
 .idea
 .coverage
-*.ipnby
-*.ipynb
 .ipynb_checkpoints
 coverage.xml
 .DS_Store
