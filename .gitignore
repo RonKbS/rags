@@ -1,0 +1,13 @@
+.env
+.vscode
+*__pycache__*
+.idea
+.coverage
+*.ipnby
+*.ipynb
+.ipynb_checkpoints
+coverage.xml
+.DS_Store
+venv/
+tox.ini
+
