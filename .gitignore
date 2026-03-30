@@ -9,5 +9,6 @@ coverage.xml
 venv/
 tox.ini
 
+*.npy
 *.csv
 *.json
