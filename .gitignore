@@ -9,6 +9,9 @@ coverage.xml
 venv/
 tox.ini
 
+*.sqlite3
+*.bin
+*.txt
 *.npy
 *.csv
 *.json
