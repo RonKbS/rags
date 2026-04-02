@@ -9,6 +9,7 @@ coverage.xml
 venv/
 tox.ini
 
+*.pickle
 *.sqlite3
 *.bin
 *.txt
