@@ -1,0 +1,36 @@
+services:
+  # lab:
+    # image: python:3.12-slim
+    # volumes:
+    #   - ./code:/code
+    #   - ./data:/data
+    # working_dir: /code
+    # stdin_open: true
+    # tty: true
+    # depends_on: [postgres, qdrant]
+    # networks: [vector_net]
+    # environment:
+    #   POSTGRES_HOST: postgres
+    #   QDRANT_HOST: qdrant
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_PASSWORD: lesson_password
+      POSTGRES_DB: arxiv_db
+    ports: ["5432:5432"]
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    networks: [vector_net]
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports: ["6333:6333", "6334:6334"]
+    volumes: [qdrant_data:/qdrant/storage]
+    networks: [vector_net]
+
+networks:
+  vector_net:
+
+volumes:
+  postgres_data:
+  qdrant_data:
