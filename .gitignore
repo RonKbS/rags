@@ -16,3 +16,10 @@ tox.ini
 *.npy
 *.csv
 *.json
+*.zip
+*.svg
+*.adoc
+*.jsonl
+CHANGES.md
+README.md
+SOURCE.md
